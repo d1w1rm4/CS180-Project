@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS 180 Project</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').on('submit', function(event) {
+                event.preventDefault();
+                $.ajax({
+                    url: '/calculate',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        $('#result').text('Estimated Household and Water Expenditure: ' + response.result);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Determining the Housing and Water Expenditure Based on Household-Level Data</h1>
+    <form>
+        <label for="a">Feature A:</label>
+        <input type="text" id="a" name="a" required><br><br>
+        <label for="b">Feature B:</label>
+        <input type="text" id="b" name="b" required><br><br>
+        <label for="c">Feature C:</label>
+        <input type="text" id="c" name="c" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="result"></div>
+</body>
+</html>
