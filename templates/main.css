@@ -2,7 +2,7 @@
 
 .wrapper_top {
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    padding: 0 0 4em 0;
+    padding: 0 0 0 0;
     text-align: center;
     height: 60%;
 }
@@ -10,7 +10,7 @@
 .wrapper{
     background-color: gainsboro;
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    padding: 8em 0 4em 0;
+    padding: 4em 0 4em 0;
     text-align: center;
     align-items: center;
 }
@@ -18,7 +18,7 @@
 .wrapper_image{
     background-color: gainsboro;
     box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-    padding: 8em 0 4em 0;
+    padding: 0 0 0 0;
     text-align: center;
     align-items: center;
 }
@@ -36,4 +36,21 @@
 form{
     align-items: center;
     text-align: center;
+}
+.form-control{
+    width: 30vw;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+.holdmyform{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+#result{
+    width: 100vw;
+    border: 1px solid black;
+    overflow: hidden;
+    font-size: 15em;
 }
