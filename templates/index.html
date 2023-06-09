@@ -40,6 +40,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#team">Team</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#data">Data</a>
+        </li>
       </ul>
       <span class="navbar-text">
       </span>
@@ -269,6 +272,16 @@
     <img src="{{url_for('static', filename='./templates/images/team.png')}}", style="width: 90vw">
   </article> 
   <!-- **************************************************************************Team end -->
+  
+  <!-- **************************************************************************Data start -->
+  <article class = 'wrapper' id="data">
+    <h1>Data Exploration</h1>
+    <div style="border: 1px solid #dcdcdc; border-radius: 6px; background-color: #dcdcdc; padding: 16px; overflow: auto;">
+      <script src="https://gist.github.com/martin0x/d9fc571386c6d19c00e635b716b41949.js"></script>
+    </div>
+  </article>
+  <!-- **************************************************************************Data end -->
+
   <script>
     var features = {{ features|tojson }};
     console.log(features); // Optional: Output the features list to the browser console
